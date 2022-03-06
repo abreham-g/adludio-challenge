@@ -16,10 +16,10 @@ with source_data as (
     select * from "adludio"."public"."transformed_sales_number_data"
 )
 
-select AVG(deal_value) as avg_deal_value, week
+select AVG(deal_value)*7 as avg_deal_value, year_quarter
 from source_data
-group by week
-ORDER BY week 
+group by year_quarter
+ORDER BY year_quarter 
 
 /*
     Uncomment the line below to remove records with null `id` values

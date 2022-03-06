@@ -1,5 +1,8 @@
 
-/*
+
+  create  table "adludio"."public"."ios_per_week__dbt_tmp"
+  as (
+    /*
     Welcome to your first dbt model!
     Did you know that you can also configure models directly within SQL files?
     This will override configurations stated in dbt_project.yml
@@ -7,13 +10,13 @@
     Try changing "table" to "view" below
 */
 
-{{ config(materialized='table') }}
+
 
 with source_data as (
-    select * from {{ref('transformed_sales_number_data')}}
+    select * from "adludio"."public"."transformed_sales_number_data"
 )
 
-select AVG(deal_email_messages_count)*7 as avg_email_count, year_quarter
+select AVG(deal_iosent_count)*7 as avg_iosent_count, year_quarter
 from source_data
 group by year_quarter
 ORDER BY year_quarter
@@ -23,3 +26,4 @@ ORDER BY year_quarter
 */
 
 -- where id is not null
+  );

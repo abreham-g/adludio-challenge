@@ -13,7 +13,7 @@ with source_data as (
     select * from {{ref('transformed_sales_number_data')}}
 )
 
-select AVG(deal_email_messages_count)*7 as avg_email_count, year_quarter
+select AVG(deal_rfp_count)*7 as avg_rfps_count, year_quarter
 from source_data
 group by year_quarter
 ORDER BY year_quarter
