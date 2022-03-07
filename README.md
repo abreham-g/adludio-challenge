@@ -13,6 +13,7 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
+        <li><a href="# Tableau Dashboard"> Tableau Dashboard</a></li>
       </ul>
     </li>
     <li>
@@ -46,7 +47,6 @@ A list of commonly used resources that we find helpful are listed in the acknowl
 Some of the Resoures that we are using in this project are :
  - [dbt](https://discourse.getdbt.com/)
  - [tableau](https://www.tableau.com/learn/get-started)
-      -
  - [Postgres](https://www.postgresql.org/docs/8.3/app-postgres.html)
 
 <!-- GETTING STARTED -->
