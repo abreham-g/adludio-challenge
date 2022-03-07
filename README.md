@@ -92,7 +92,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 - https://analysis-summary.netlify.app/#!/overview
 ## Tableau
 
-Project Link: [https://github.com/Abreham-g/adludio-challenge)
   - Link for Quarterly Average Deal Value per week
     - https://public.tableau.com/app/profile/abreham.gessesse2511/viz/QuarterlyAvgDealValueperweek/Sheet4
  - Tableau link for Quarterly Average Emails per week
