@@ -14376,3 +14376,1125 @@ drop table if exists "adludio"."public"."rfps_per_week__dbt_backup" cascade
 20:05:42.552976 [info ] [MainThread]: 
 20:05:42.553411 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 TOTAL=6
 20:05:42.553968 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f33621f42b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f33621f98b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3378012e20>]}
+2022-03-07 11:06:49.967215 (MainThread): Running with dbt=0.20.2
+2022-03-07 11:06:50.446214 (MainThread): running dbt with arguments Namespace(record_timing_info=None, debug=False, log_format='default', write_json=True, use_colors=None, strict=False, warn_error=False, partial_parse=None, single_threaded=False, test_new_parser=False, use_experimental_parser=False, project_dir=None, profiles_dir='C:\\Users\\Abreham\\.dbt', profile=None, target=None, vars='{}', log_cache_events=False, use_cache=True, fail_fast=False, threads=None, version_check=True, models=None, exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+2022-03-07 11:06:50.450215 (MainThread): Tracking: tracking
+2022-03-07 11:06:50.520210 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014D2C01F280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014D3B9BDE80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014D3B9BDD90>]}
+2022-03-07 11:06:50.600213 (MainThread): Partial parsing not enabled
+2022-03-07 11:06:51.389211 (MainThread): Parsing macros\adapters.sql
+2022-03-07 11:06:51.542209 (MainThread): Parsing macros\catalog.sql
+2022-03-07 11:06:51.552212 (MainThread): Parsing macros\relations.sql
+2022-03-07 11:06:51.559212 (MainThread): Parsing macros\materializations\snapshot_merge.sql
+2022-03-07 11:06:51.580223 (MainThread): Parsing macros\core.sql
+2022-03-07 11:06:51.603212 (MainThread): Parsing macros\adapters\common.sql
+2022-03-07 11:06:51.963218 (MainThread): Parsing macros\etc\datetime.sql
+2022-03-07 11:06:52.003213 (MainThread): Parsing macros\etc\get_custom_alias.sql
+2022-03-07 11:06:52.010215 (MainThread): Parsing macros\etc\get_custom_database.sql
+2022-03-07 11:06:52.019215 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2022-03-07 11:06:52.036225 (MainThread): Parsing macros\etc\is_incremental.sql
+2022-03-07 11:06:52.054216 (MainThread): Parsing macros\etc\query.sql
+2022-03-07 11:06:52.059215 (MainThread): Parsing macros\materializations\helpers.sql
+2022-03-07 11:06:52.128217 (MainThread): Parsing macros\materializations\test.sql
+2022-03-07 11:06:52.160212 (MainThread): Parsing macros\materializations\common\merge.sql
+2022-03-07 11:06:52.242210 (MainThread): Parsing macros\materializations\incremental\helpers.sql
+2022-03-07 11:06:52.252213 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2022-03-07 11:06:52.309215 (MainThread): Parsing macros\materializations\seed\seed.sql
+2022-03-07 11:06:52.441219 (MainThread): Parsing macros\materializations\snapshot\snapshot.sql
+2022-03-07 11:06:52.615216 (MainThread): Parsing macros\materializations\snapshot\snapshot_merge.sql
+2022-03-07 11:06:52.626212 (MainThread): Parsing macros\materializations\snapshot\strategies.sql
+2022-03-07 11:06:52.753210 (MainThread): Parsing macros\materializations\table\table.sql
+2022-03-07 11:06:52.784208 (MainThread): Parsing macros\materializations\view\create_or_replace_view.sql
+2022-03-07 11:06:52.830213 (MainThread): Parsing macros\materializations\view\view.sql
+2022-03-07 11:06:52.859210 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2022-03-07 11:06:52.870215 (MainThread): Parsing macros\schema_tests\not_null.sql
+2022-03-07 11:06:52.882240 (MainThread): Parsing macros\schema_tests\relationships.sql
+2022-03-07 11:06:52.901213 (MainThread): Parsing macros\schema_tests\unique.sql
+2022-03-07 11:06:53.923214 (MainThread): Acquiring new postgres connection "model.Analytics_dbt. meeting_per_week".
+2022-03-07 11:06:53.988211 (MainThread): Acquiring new postgres connection "model.Analytics_dbt.deal_value_per_week".
+2022-03-07 11:06:54.005215 (MainThread): Acquiring new postgres connection "model.Analytics_dbt.email_per_week".
+2022-03-07 11:06:54.035215 (MainThread): Acquiring new postgres connection "model.Analytics_dbt.ios_per_week".
+2022-03-07 11:06:54.050216 (MainThread): Acquiring new postgres connection "model.Analytics_dbt.rfps_per_week".
+2022-03-07 11:06:54.070213 (MainThread): Acquiring new postgres connection "model.Analytics_dbt.transformed_sales_number_data".
+2022-03-07 11:06:54.293217 (MainThread): [WARNING]: Test 'test.Analytics_dbt.unique_my_first_dbt_model_id.5ef3c774bb' (models\Sales Numbers\schema.yml) depends on a node named 'my_first_dbt_model' which was not found
+2022-03-07 11:06:54.303220 (MainThread): [WARNING]: Test 'test.Analytics_dbt.not_null_my_first_dbt_model_id.f479667b44' (models\Sales Numbers\schema.yml) depends on a node named 'my_first_dbt_model' which was not found
+2022-03-07 11:06:54.319217 (MainThread): [WARNING]: Test 'test.Analytics_dbt.unique_my_second_dbt_model_id.bc96125570' (models\Sales Numbers\schema.yml) depends on a node named 'my_second_dbt_model' which was not found
+2022-03-07 11:06:54.332214 (MainThread): [WARNING]: Test 'test.Analytics_dbt.not_null_my_second_dbt_model_id.dc1d13aa6d' (models\Sales Numbers\schema.yml) depends on a node named 'my_second_dbt_model' which was not found
+2022-03-07 11:06:54.494219 (MainThread): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.Analytics_dbt.example
+
+2022-03-07 11:06:54.605224 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'dfe29ba5-616e-4edc-9cd8-bd79aa8afb19', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014D3BC01F10>]}
+2022-03-07 11:06:54.673217 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'dfe29ba5-616e-4edc-9cd8-bd79aa8afb19', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014D3BB33E50>]}
+2022-03-07 11:06:54.674213 (MainThread): Found 6 models, 0 tests, 0 snapshots, 0 analyses, 147 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2022-03-07 11:06:54.689214 (MainThread): 
+2022-03-07 11:06:54.691217 (MainThread): Acquiring new postgres connection "master".
+2022-03-07 11:06:54.725219 (ThreadPoolExecutor-0_0): Acquiring new postgres connection "list_adludio".
+2022-03-07 11:06:54.819213 (ThreadPoolExecutor-0_0): Using postgres connection "list_adludio".
+2022-03-07 11:06:54.820211 (ThreadPoolExecutor-0_0): On list_adludio: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "connection_name": "list_adludio"} */
+
+    select distinct nspname from pg_namespace
+  
+2022-03-07 11:06:54.820211 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2022-03-07 11:06:55.201219 (ThreadPoolExecutor-0_0): Got an error when attempting to open a postgres connection: 'FATAL:  database "adludio" does not exist
+'
+2022-03-07 11:06:55.202216 (ThreadPoolExecutor-0_0): Error running SQL: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "connection_name": "list_adludio"} */
+
+    select distinct nspname from pg_namespace
+  
+2022-03-07 11:06:55.202216 (ThreadPoolExecutor-0_0): Rolling back transaction.
+2022-03-07 11:06:55.203216 (ThreadPoolExecutor-0_0): Error running SQL: macro list_schemas
+2022-03-07 11:06:55.203216 (ThreadPoolExecutor-0_0): Rolling back transaction.
+2022-03-07 11:06:55.204214 (ThreadPoolExecutor-0_0): On list_adludio: No close available on handle
+2022-03-07 11:06:55.206216 (MainThread): Connection 'master' was properly closed.
+2022-03-07 11:06:55.207216 (MainThread): Connection 'list_adludio' was properly closed.
+2022-03-07 11:06:55.207216 (MainThread): ERROR: Database Error
+  FATAL:  database "adludio" does not exist
+  
+2022-03-07 11:06:55.216217 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014D3BB03670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014D3BBD3FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014D3BB546A0>]}
+2022-03-07 11:06:55.217216 (MainThread): Flushing usage events
+2022-03-07 11:11:52.751213 (MainThread): Running with dbt=0.20.2
+2022-03-07 11:11:53.296753 (MainThread): running dbt with arguments Namespace(record_timing_info=None, debug=False, log_format='default', write_json=True, use_colors=None, strict=False, warn_error=False, partial_parse=None, single_threaded=False, test_new_parser=False, use_experimental_parser=False, project_dir=None, profiles_dir='C:\\Users\\Abreham\\.dbt', profile=None, target=None, vars='{}', log_cache_events=False, use_cache=True, fail_fast=False, threads=None, version_check=True, models=None, exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+2022-03-07 11:11:53.298753 (MainThread): Tracking: tracking
+2022-03-07 11:11:53.343753 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B579AF2DC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B579AFDE80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B579AFDCA0>]}
+2022-03-07 11:11:53.418325 (MainThread): Partial parsing not enabled
+2022-03-07 11:11:54.108319 (MainThread): Parsing macros\adapters.sql
+2022-03-07 11:11:54.242321 (MainThread): Parsing macros\catalog.sql
+2022-03-07 11:11:54.252323 (MainThread): Parsing macros\relations.sql
+2022-03-07 11:11:54.261330 (MainThread): Parsing macros\materializations\snapshot_merge.sql
+2022-03-07 11:11:54.276329 (MainThread): Parsing macros\core.sql
+2022-03-07 11:11:54.300322 (MainThread): Parsing macros\adapters\common.sql
+2022-03-07 11:11:54.573325 (MainThread): Parsing macros\etc\datetime.sql
+2022-03-07 11:11:54.618321 (MainThread): Parsing macros\etc\get_custom_alias.sql
+2022-03-07 11:11:54.623325 (MainThread): Parsing macros\etc\get_custom_database.sql
+2022-03-07 11:11:54.630321 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2022-03-07 11:11:54.637319 (MainThread): Parsing macros\etc\is_incremental.sql
+2022-03-07 11:11:54.642323 (MainThread): Parsing macros\etc\query.sql
+2022-03-07 11:11:54.649321 (MainThread): Parsing macros\materializations\helpers.sql
+2022-03-07 11:11:54.690333 (MainThread): Parsing macros\materializations\test.sql
+2022-03-07 11:11:54.725335 (MainThread): Parsing macros\materializations\common\merge.sql
+2022-03-07 11:11:54.783327 (MainThread): Parsing macros\materializations\incremental\helpers.sql
+2022-03-07 11:11:54.794327 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2022-03-07 11:11:54.830320 (MainThread): Parsing macros\materializations\seed\seed.sql
+2022-03-07 11:11:54.932373 (MainThread): Parsing macros\materializations\snapshot\snapshot.sql
+2022-03-07 11:11:55.126325 (MainThread): Parsing macros\materializations\snapshot\snapshot_merge.sql
+2022-03-07 11:11:55.141324 (MainThread): Parsing macros\materializations\snapshot\strategies.sql
+2022-03-07 11:11:55.238324 (MainThread): Parsing macros\materializations\table\table.sql
+2022-03-07 11:11:55.279324 (MainThread): Parsing macros\materializations\view\create_or_replace_view.sql
+2022-03-07 11:11:55.312324 (MainThread): Parsing macros\materializations\view\view.sql
+2022-03-07 11:11:55.353324 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2022-03-07 11:11:55.379324 (MainThread): Parsing macros\schema_tests\not_null.sql
+2022-03-07 11:11:55.385322 (MainThread): Parsing macros\schema_tests\relationships.sql
+2022-03-07 11:11:55.394323 (MainThread): Parsing macros\schema_tests\unique.sql
+2022-03-07 11:11:56.327325 (MainThread): Acquiring new postgres connection "model.Analytics_dbt. meeting_per_week".
+2022-03-07 11:11:56.403870 (MainThread): Acquiring new postgres connection "model.Analytics_dbt.deal_value_per_week".
+2022-03-07 11:11:56.436867 (MainThread): Acquiring new postgres connection "model.Analytics_dbt.email_per_week".
+2022-03-07 11:11:56.464869 (MainThread): Acquiring new postgres connection "model.Analytics_dbt.ios_per_week".
+2022-03-07 11:11:56.504871 (MainThread): Acquiring new postgres connection "model.Analytics_dbt.rfps_per_week".
+2022-03-07 11:11:56.526871 (MainThread): Acquiring new postgres connection "model.Analytics_dbt.transformed_sales_number_data".
+2022-03-07 11:11:56.763867 (MainThread): [WARNING]: Test 'test.Analytics_dbt.unique_my_first_dbt_model_id.5ef3c774bb' (models\Sales Numbers\schema.yml) depends on a node named 'my_first_dbt_model' which was not found
+2022-03-07 11:11:56.771873 (MainThread): [WARNING]: Test 'test.Analytics_dbt.not_null_my_first_dbt_model_id.f479667b44' (models\Sales Numbers\schema.yml) depends on a node named 'my_first_dbt_model' which was not found
+2022-03-07 11:11:56.781871 (MainThread): [WARNING]: Test 'test.Analytics_dbt.unique_my_second_dbt_model_id.bc96125570' (models\Sales Numbers\schema.yml) depends on a node named 'my_second_dbt_model' which was not found
+2022-03-07 11:11:56.801873 (MainThread): [WARNING]: Test 'test.Analytics_dbt.not_null_my_second_dbt_model_id.dc1d13aa6d' (models\Sales Numbers\schema.yml) depends on a node named 'my_second_dbt_model' which was not found
+2022-03-07 11:11:56.929874 (MainThread): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.Analytics_dbt.example
+
+2022-03-07 11:11:57.027867 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b2cb4825-eb0f-4bfe-8261-d70f068aec61', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B579C7A0D0>]}
+2022-03-07 11:11:57.121871 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b2cb4825-eb0f-4bfe-8261-d70f068aec61', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B579C7A2E0>]}
+2022-03-07 11:11:57.126883 (MainThread): Found 6 models, 0 tests, 0 snapshots, 0 analyses, 147 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2022-03-07 11:11:57.184875 (MainThread): 
+2022-03-07 11:11:57.201868 (MainThread): Acquiring new postgres connection "master".
+2022-03-07 11:11:57.266176 (ThreadPoolExecutor-0_0): Acquiring new postgres connection "list_adludio".
+2022-03-07 11:11:57.381697 (ThreadPoolExecutor-0_0): Using postgres connection "list_adludio".
+2022-03-07 11:11:57.381697 (ThreadPoolExecutor-0_0): On list_adludio: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "connection_name": "list_adludio"} */
+
+    select distinct nspname from pg_namespace
+  
+2022-03-07 11:11:57.382703 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2022-03-07 11:11:57.671913 (ThreadPoolExecutor-0_0): Got an error when attempting to open a postgres connection: 'FATAL:  database "adludio" does not exist
+'
+2022-03-07 11:11:57.671913 (ThreadPoolExecutor-0_0): Error running SQL: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "connection_name": "list_adludio"} */
+
+    select distinct nspname from pg_namespace
+  
+2022-03-07 11:11:57.672915 (ThreadPoolExecutor-0_0): Rolling back transaction.
+2022-03-07 11:11:57.672915 (ThreadPoolExecutor-0_0): Error running SQL: macro list_schemas
+2022-03-07 11:11:57.673915 (ThreadPoolExecutor-0_0): Rolling back transaction.
+2022-03-07 11:11:57.673915 (ThreadPoolExecutor-0_0): On list_adludio: No close available on handle
+2022-03-07 11:11:57.675917 (MainThread): Connection 'master' was properly closed.
+2022-03-07 11:11:57.676913 (MainThread): Connection 'list_adludio' was properly closed.
+2022-03-07 11:11:57.676913 (MainThread): ERROR: Database Error
+  FATAL:  database "adludio" does not exist
+  
+2022-03-07 11:11:57.689917 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B579BB9100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B579AFDE80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B579D14550>]}
+2022-03-07 11:11:57.690932 (MainThread): Flushing usage events
+2022-03-07 11:18:20.077108 (MainThread): Running with dbt=0.20.2
+2022-03-07 11:18:20.513097 (MainThread): running dbt with arguments Namespace(record_timing_info=None, debug=False, log_format='default', write_json=True, use_colors=None, strict=False, warn_error=False, partial_parse=None, single_threaded=False, test_new_parser=False, use_experimental_parser=False, project_dir=None, profiles_dir='C:\\Users\\Abreham\\.dbt', profile=None, target=None, vars='{}', log_cache_events=False, use_cache=True, fail_fast=False, threads=None, version_check=True, models=None, exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+2022-03-07 11:18:20.518099 (MainThread): Tracking: tracking
+2022-03-07 11:18:20.711100 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BA6E1F280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BB67BDE80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BB67BDD90>]}
+2022-03-07 11:18:20.771104 (MainThread): Partial parsing not enabled
+2022-03-07 11:18:20.930100 (MainThread): Parsing macros\adapters.sql
+2022-03-07 11:18:21.045104 (MainThread): Parsing macros\catalog.sql
+2022-03-07 11:18:21.054104 (MainThread): Parsing macros\relations.sql
+2022-03-07 11:18:21.062097 (MainThread): Parsing macros\materializations\snapshot_merge.sql
+2022-03-07 11:18:21.074111 (MainThread): Parsing macros\core.sql
+2022-03-07 11:18:21.093109 (MainThread): Parsing macros\adapters\common.sql
+2022-03-07 11:18:21.525115 (MainThread): Parsing macros\etc\datetime.sql
+2022-03-07 11:18:21.636099 (MainThread): Parsing macros\etc\get_custom_alias.sql
+2022-03-07 11:18:21.641100 (MainThread): Parsing macros\etc\get_custom_database.sql
+2022-03-07 11:18:21.656097 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2022-03-07 11:18:21.706097 (MainThread): Parsing macros\etc\is_incremental.sql
+2022-03-07 11:18:21.719100 (MainThread): Parsing macros\etc\query.sql
+2022-03-07 11:18:21.725104 (MainThread): Parsing macros\materializations\helpers.sql
+2022-03-07 11:18:21.833642 (MainThread): Parsing macros\materializations\test.sql
+2022-03-07 11:18:21.896642 (MainThread): Parsing macros\materializations\common\merge.sql
+2022-03-07 11:18:21.980642 (MainThread): Parsing macros\materializations\incremental\helpers.sql
+2022-03-07 11:18:21.989647 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2022-03-07 11:18:22.032643 (MainThread): Parsing macros\materializations\seed\seed.sql
+2022-03-07 11:18:22.129640 (MainThread): Parsing macros\materializations\snapshot\snapshot.sql
+2022-03-07 11:18:22.340641 (MainThread): Parsing macros\materializations\snapshot\snapshot_merge.sql
+2022-03-07 11:18:22.352643 (MainThread): Parsing macros\materializations\snapshot\strategies.sql
+2022-03-07 11:18:22.586642 (MainThread): Parsing macros\materializations\table\table.sql
+2022-03-07 11:18:22.657643 (MainThread): Parsing macros\materializations\view\create_or_replace_view.sql
+2022-03-07 11:18:22.692668 (MainThread): Parsing macros\materializations\view\view.sql
+2022-03-07 11:18:22.735326 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2022-03-07 11:18:22.748324 (MainThread): Parsing macros\schema_tests\not_null.sql
+2022-03-07 11:18:22.754325 (MainThread): Parsing macros\schema_tests\relationships.sql
+2022-03-07 11:18:22.769898 (MainThread): Parsing macros\schema_tests\unique.sql
+2022-03-07 11:18:23.813878 (MainThread): Acquiring new postgres connection "model.Analytics_dbt. meeting_per_week".
+2022-03-07 11:18:23.852876 (MainThread): Acquiring new postgres connection "model.Analytics_dbt.deal_value_per_week".
+2022-03-07 11:18:23.871876 (MainThread): Acquiring new postgres connection "model.Analytics_dbt.email_per_week".
+2022-03-07 11:18:23.890873 (MainThread): Acquiring new postgres connection "model.Analytics_dbt.ios_per_week".
+2022-03-07 11:18:23.905874 (MainThread): Acquiring new postgres connection "model.Analytics_dbt.rfps_per_week".
+2022-03-07 11:18:23.924875 (MainThread): Acquiring new postgres connection "model.Analytics_dbt.transformed_sales_number_data".
+2022-03-07 11:18:24.094887 (MainThread): [WARNING]: Test 'test.Analytics_dbt.unique_my_first_dbt_model_id.5ef3c774bb' (models\Sales Numbers\schema.yml) depends on a node named 'my_first_dbt_model' which was not found
+2022-03-07 11:18:24.101879 (MainThread): [WARNING]: Test 'test.Analytics_dbt.not_null_my_first_dbt_model_id.f479667b44' (models\Sales Numbers\schema.yml) depends on a node named 'my_first_dbt_model' which was not found
+2022-03-07 11:18:24.106879 (MainThread): [WARNING]: Test 'test.Analytics_dbt.unique_my_second_dbt_model_id.bc96125570' (models\Sales Numbers\schema.yml) depends on a node named 'my_second_dbt_model' which was not found
+2022-03-07 11:18:24.113878 (MainThread): [WARNING]: Test 'test.Analytics_dbt.not_null_my_second_dbt_model_id.dc1d13aa6d' (models\Sales Numbers\schema.yml) depends on a node named 'my_second_dbt_model' which was not found
+2022-03-07 11:18:24.178877 (MainThread): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.Analytics_dbt.example
+
+2022-03-07 11:18:24.264882 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '39d565d4-6374-48d7-9a33-efc6f54d294e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BB6A01F10>]}
+2022-03-07 11:18:24.378887 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '39d565d4-6374-48d7-9a33-efc6f54d294e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BB6936280>]}
+2022-03-07 11:18:24.380883 (MainThread): Found 6 models, 0 tests, 0 snapshots, 0 analyses, 147 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2022-03-07 11:18:24.441880 (MainThread): 
+2022-03-07 11:18:24.460883 (MainThread): Acquiring new postgres connection "master".
+2022-03-07 11:18:24.548883 (ThreadPoolExecutor-0_0): Acquiring new postgres connection "list_adludio".
+2022-03-07 11:18:24.660882 (ThreadPoolExecutor-0_0): Using postgres connection "list_adludio".
+2022-03-07 11:18:24.661883 (ThreadPoolExecutor-0_0): On list_adludio: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "connection_name": "list_adludio"} */
+
+    select distinct nspname from pg_namespace
+  
+2022-03-07 11:18:24.661883 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2022-03-07 11:18:25.058874 (ThreadPoolExecutor-0_0): SQL status: SELECT 4 in 0.40 seconds
+2022-03-07 11:18:25.071873 (ThreadPoolExecutor-0_0): On list_adludio: Close
+2022-03-07 11:18:25.113878 (ThreadPoolExecutor-1_0): Acquiring new postgres connection "list_adludio_public".
+2022-03-07 11:18:25.163879 (ThreadPoolExecutor-1_0): Using postgres connection "list_adludio_public".
+2022-03-07 11:18:25.164882 (ThreadPoolExecutor-1_0): On list_adludio_public: BEGIN
+2022-03-07 11:18:25.165881 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state init
+2022-03-07 11:18:25.452882 (ThreadPoolExecutor-1_0): SQL status: BEGIN in 0.29 seconds
+2022-03-07 11:18:25.452882 (ThreadPoolExecutor-1_0): Using postgres connection "list_adludio_public".
+2022-03-07 11:18:25.453881 (ThreadPoolExecutor-1_0): On list_adludio_public: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "connection_name": "list_adludio_public"} */
+select
+      'adludio' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'adludio' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+  
+2022-03-07 11:18:25.495874 (ThreadPoolExecutor-1_0): SQL status: SELECT 1 in 0.04 seconds
+2022-03-07 11:18:25.498876 (ThreadPoolExecutor-1_0): On list_adludio_public: ROLLBACK
+2022-03-07 11:18:25.499888 (ThreadPoolExecutor-1_0): On list_adludio_public: Close
+2022-03-07 11:18:25.522875 (MainThread): Using postgres connection "master".
+2022-03-07 11:18:25.522875 (MainThread): On master: BEGIN
+2022-03-07 11:18:25.523878 (MainThread): Opening a new connection, currently in state init
+2022-03-07 11:18:25.717425 (MainThread): SQL status: BEGIN in 0.19 seconds
+2022-03-07 11:18:25.718426 (MainThread): Using postgres connection "master".
+2022-03-07 11:18:25.718426 (MainThread): On master: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+2022-03-07 11:18:25.777427 (MainThread): SQL status: SELECT 0 in 0.06 seconds
+2022-03-07 11:18:25.779426 (MainThread): On master: ROLLBACK
+2022-03-07 11:18:25.780427 (MainThread): Using postgres connection "master".
+2022-03-07 11:18:25.780427 (MainThread): On master: BEGIN
+2022-03-07 11:18:25.781439 (MainThread): SQL status: BEGIN in 0.00 seconds
+2022-03-07 11:18:25.782425 (MainThread): On master: COMMIT
+2022-03-07 11:18:25.782425 (MainThread): Using postgres connection "master".
+2022-03-07 11:18:25.783426 (MainThread): On master: COMMIT
+2022-03-07 11:18:25.784428 (MainThread): SQL status: COMMIT in 0.00 seconds
+2022-03-07 11:18:25.785430 (MainThread): On master: Close
+2022-03-07 11:18:25.786427 (MainThread): 08:18:25 | Concurrency: 1 threads (target='dev')
+2022-03-07 11:18:25.791425 (MainThread): 08:18:25 | 
+2022-03-07 11:18:25.947990 (Thread-1): Began running node model.Analytics_dbt.transformed_sales_number_data
+2022-03-07 11:18:25.948989 (Thread-1): 08:18:25 | 1 of 6 START table model public.transformed_sales_number_data........ [RUN]
+2022-03-07 11:18:25.952992 (Thread-1): Acquiring new postgres connection "model.Analytics_dbt.transformed_sales_number_data".
+2022-03-07 11:18:25.952992 (Thread-1): Compiling model.Analytics_dbt.transformed_sales_number_data
+2022-03-07 11:18:25.965991 (Thread-1): Writing injected SQL for node "model.Analytics_dbt.transformed_sales_number_data"
+2022-03-07 11:18:25.970991 (Thread-1): finished collecting timing info
+2022-03-07 11:18:26.298986 (Thread-1): Using postgres connection "model.Analytics_dbt.transformed_sales_number_data".
+2022-03-07 11:18:26.299986 (Thread-1): On model.Analytics_dbt.transformed_sales_number_data: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "node_id": "model.Analytics_dbt.transformed_sales_number_data"} */
+drop table if exists "adludio"."public"."transformed_sales_number_data__dbt_tmp" cascade
+2022-03-07 11:18:26.305000 (Thread-1): Opening a new connection, currently in state init
+2022-03-07 11:18:26.678984 (Thread-1): SQL status: DROP TABLE in 0.37 seconds
+2022-03-07 11:18:26.688984 (Thread-1): Using postgres connection "model.Analytics_dbt.transformed_sales_number_data".
+2022-03-07 11:18:26.688984 (Thread-1): On model.Analytics_dbt.transformed_sales_number_data: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "node_id": "model.Analytics_dbt.transformed_sales_number_data"} */
+drop table if exists "adludio"."public"."transformed_sales_number_data__dbt_backup" cascade
+2022-03-07 11:18:26.689987 (Thread-1): SQL status: DROP TABLE in 0.00 seconds
+2022-03-07 11:18:26.772983 (Thread-1): Writing runtime SQL for node "model.Analytics_dbt.transformed_sales_number_data"
+2022-03-07 11:18:26.792986 (Thread-1): Using postgres connection "model.Analytics_dbt.transformed_sales_number_data".
+2022-03-07 11:18:26.793986 (Thread-1): On model.Analytics_dbt.transformed_sales_number_data: BEGIN
+2022-03-07 11:18:26.794983 (Thread-1): SQL status: BEGIN in 0.00 seconds
+2022-03-07 11:18:26.795985 (Thread-1): Using postgres connection "model.Analytics_dbt.transformed_sales_number_data".
+2022-03-07 11:18:26.796984 (Thread-1): On model.Analytics_dbt.transformed_sales_number_data: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "node_id": "model.Analytics_dbt.transformed_sales_number_data"} */
+
+
+  create  table "adludio"."public"."transformed_sales_number_data__dbt_tmp"
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select *, DATE_PART('week', to_date("Deal_created_at", 'DD/MM/YYYY')) as week,
+    DATE_PART('year', to_date("Deal_created_at", 'DD/MM/YYYY')) as year,
+    EXTRACT (QUARTER FROM to_date("Deal_created_at", 'DD/MM/YYYY')) as quarter
+
+    from sales_table 
+
+)
+
+select "Deal_id" as id, "Deal_created_at" as Deal_created_at,
+"Deal_Value" as deal_value, "Deal_Stage" as deal_stage,
+
+    case when "Deal_Stage" = 'Meeting' then 1 else 0 end as deal_meeting_count,
+    case when "Deal_Stage" = 'IO Sent' then 1 else 0 end as deal_iosent_count,
+    case when "Deal_Stage" = 'RFP' then 1 else 0 end  as deal_rfp_count,
+"Deal _Status" as deal_status, "Deal_Email_messages_count" as deal_email_messages_count,
+"Deal_Total_activities" as deal_total_activities, "Deal_Currency" as deal_currency,
+"Deal_Region" as deal_region, week,quarter, year,
+CONCAT  (year, '_', week) AS year_week,
+CONCAT  (year, '_', quarter) AS year_quarter
+from source_data
+
+ORDER BY year_week
+
+ 
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+2022-03-07 11:18:26.803989 (Thread-1): Postgres error: relation "sales_table" does not exist
+LINE 22:     from sales_table 
+                  ^
+
+2022-03-07 11:18:26.804992 (Thread-1): On model.Analytics_dbt.transformed_sales_number_data: ROLLBACK
+2022-03-07 11:18:26.804992 (Thread-1): finished collecting timing info
+2022-03-07 11:18:26.805983 (Thread-1): On model.Analytics_dbt.transformed_sales_number_data: Close
+2022-03-07 11:18:26.806983 (Thread-1): Database Error in model transformed_sales_number_data (models\Sales Numbers\transformed_sales_number_data.sql)
+  relation "sales_table" does not exist
+  LINE 22:     from sales_table 
+                    ^
+  compiled SQL at target\run\Analytics_dbt\models\Sales Numbers\transformed_sales_number_data.sql
+Traceback (most recent call last):
+  File "c:\users\abreham\appdata\local\programs\python\python39\lib\site-packages\dbt\adapters\postgres\connections.py", line 48, in exception_handler
+    yield
+  File "c:\users\abreham\appdata\local\programs\python\python39\lib\site-packages\dbt\adapters\sql\connections.py", line 80, in add_query
+    cursor.execute(sql, bindings)
+psycopg2.errors.UndefinedTable: relation "sales_table" does not exist
+LINE 22:     from sales_table 
+                  ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\users\abreham\appdata\local\programs\python\python39\lib\site-packages\dbt\task\base.py", line 348, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "c:\users\abreham\appdata\local\programs\python\python39\lib\site-packages\dbt\task\base.py", line 291, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "c:\users\abreham\appdata\local\programs\python\python39\lib\site-packages\dbt\task\base.py", line 393, in run
+    return self.execute(compiled_node, manifest)
+  File "c:\users\abreham\appdata\local\programs\python\python39\lib\site-packages\dbt\task\run.py", line 249, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "c:\users\abreham\appdata\local\programs\python\python39\lib\site-packages\dbt\clients\jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "c:\users\abreham\appdata\local\programs\python\python39\lib\site-packages\dbt\clients\jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "c:\users\abreham\appdata\local\programs\python\python39\lib\site-packages\jinja2\runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "c:\users\abreham\appdata\local\programs\python\python39\lib\site-packages\jinja2\runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 64, in macro
+  File "c:\users\abreham\appdata\local\programs\python\python39\lib\site-packages\jinja2\sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "c:\users\abreham\appdata\local\programs\python\python39\lib\site-packages\jinja2\runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "c:\users\abreham\appdata\local\programs\python\python39\lib\site-packages\dbt\clients\jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "c:\users\abreham\appdata\local\programs\python\python39\lib\site-packages\dbt\clients\jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "c:\users\abreham\appdata\local\programs\python\python39\lib\site-packages\jinja2\runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "c:\users\abreham\appdata\local\programs\python\python39\lib\site-packages\jinja2\runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "c:\users\abreham\appdata\local\programs\python\python39\lib\site-packages\jinja2\sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "c:\users\abreham\appdata\local\programs\python\python39\lib\site-packages\jinja2\runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "c:\users\abreham\appdata\local\programs\python\python39\lib\site-packages\dbt\adapters\base\impl.py", line 226, in execute
+    return self.connections.execute(
+  File "c:\users\abreham\appdata\local\programs\python\python39\lib\site-packages\dbt\adapters\sql\connections.py", line 131, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "c:\users\abreham\appdata\local\programs\python\python39\lib\site-packages\dbt\adapters\sql\connections.py", line 87, in add_query
+    return connection, cursor
+  File "c:\users\abreham\appdata\local\programs\python\python39\lib\contextlib.py", line 135, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "c:\users\abreham\appdata\local\programs\python\python39\lib\site-packages\dbt\adapters\postgres\connections.py", line 59, in exception_handler
+    raise dbt.exceptions.DatabaseException(str(e).strip()) from e
+dbt.exceptions.DatabaseException: Database Error in model transformed_sales_number_data (models\Sales Numbers\transformed_sales_number_data.sql)
+  relation "sales_table" does not exist
+  LINE 22:     from sales_table 
+                    ^
+  compiled SQL at target\run\Analytics_dbt\models\Sales Numbers\transformed_sales_number_data.sql
+2022-03-07 11:18:27.225985 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '39d565d4-6374-48d7-9a33-efc6f54d294e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BB6A103D0>]}
+2022-03-07 11:18:27.229985 (Thread-1): 08:18:27 | 1 of 6 ERROR creating table model public.transformed_sales_number_data [ERROR in 1.27s]
+2022-03-07 11:18:27.274986 (Thread-1): Finished running node model.Analytics_dbt.transformed_sales_number_data
+2022-03-07 11:18:27.284989 (Thread-1): Began running node model.Analytics_dbt. meeting_per_week
+2022-03-07 11:18:27.285988 (Thread-1): 08:18:27 | 2 of 6 SKIP relation public. meeting_per_week........................ [SKIP]
+2022-03-07 11:18:27.290989 (Thread-1): Finished running node model.Analytics_dbt. meeting_per_week
+2022-03-07 11:18:27.291988 (Thread-1): Began running node model.Analytics_dbt.deal_value_per_week
+2022-03-07 11:18:27.292987 (Thread-1): 08:18:27 | 3 of 6 SKIP relation public.deal_value_per_week...................... [SKIP]
+2022-03-07 11:18:27.294989 (Thread-1): Finished running node model.Analytics_dbt.deal_value_per_week
+2022-03-07 11:18:27.295992 (Thread-1): Began running node model.Analytics_dbt.email_per_week
+2022-03-07 11:18:27.296990 (Thread-1): 08:18:27 | 4 of 6 SKIP relation public.email_per_week........................... [SKIP]
+2022-03-07 11:18:27.300000 (Thread-1): Finished running node model.Analytics_dbt.email_per_week
+2022-03-07 11:18:27.301992 (Thread-1): Began running node model.Analytics_dbt.ios_per_week
+2022-03-07 11:18:27.302992 (Thread-1): 08:18:27 | 5 of 6 SKIP relation public.ios_per_week............................. [SKIP]
+2022-03-07 11:18:27.305985 (Thread-1): Finished running node model.Analytics_dbt.ios_per_week
+2022-03-07 11:18:27.307988 (Thread-1): Began running node model.Analytics_dbt.rfps_per_week
+2022-03-07 11:18:27.308988 (Thread-1): 08:18:27 | 6 of 6 SKIP relation public.rfps_per_week............................ [SKIP]
+2022-03-07 11:18:27.311996 (Thread-1): Finished running node model.Analytics_dbt.rfps_per_week
+2022-03-07 11:18:27.316987 (MainThread): Acquiring new postgres connection "master".
+2022-03-07 11:18:27.317987 (MainThread): Using postgres connection "master".
+2022-03-07 11:18:27.318989 (MainThread): On master: BEGIN
+2022-03-07 11:18:27.318989 (MainThread): Opening a new connection, currently in state closed
+2022-03-07 11:18:27.762478 (MainThread): SQL status: BEGIN in 0.44 seconds
+2022-03-07 11:18:27.763479 (MainThread): On master: COMMIT
+2022-03-07 11:18:27.763479 (MainThread): Using postgres connection "master".
+2022-03-07 11:18:27.764480 (MainThread): On master: COMMIT
+2022-03-07 11:18:27.764480 (MainThread): SQL status: COMMIT in 0.00 seconds
+2022-03-07 11:18:27.765478 (MainThread): On master: Close
+2022-03-07 11:18:27.766478 (MainThread): 08:18:27 | 
+2022-03-07 11:18:27.769481 (MainThread): 08:18:27 | Finished running 6 table models in 3.31s.
+2022-03-07 11:18:27.770483 (MainThread): Connection 'master' was properly closed.
+2022-03-07 11:18:27.771481 (MainThread): Connection 'list_adludio' was properly closed.
+2022-03-07 11:18:27.771481 (MainThread): Connection 'list_adludio_public' was properly closed.
+2022-03-07 11:18:27.771481 (MainThread): Connection 'model.Analytics_dbt.transformed_sales_number_data' was properly closed.
+2022-03-07 11:18:27.793484 (MainThread): 
+2022-03-07 11:18:27.805481 (MainThread): Completed with 1 error and 0 warnings:
+2022-03-07 11:18:27.814499 (MainThread): 
+2022-03-07 11:18:27.825495 (MainThread): Database Error in model transformed_sales_number_data (models\Sales Numbers\transformed_sales_number_data.sql)
+2022-03-07 11:18:27.879480 (MainThread):   relation "sales_table" does not exist
+2022-03-07 11:18:27.914481 (MainThread):   LINE 22:     from sales_table 
+2022-03-07 11:18:27.961482 (MainThread):                     ^
+2022-03-07 11:18:27.975477 (MainThread):   compiled SQL at target\run\Analytics_dbt\models\Sales Numbers\transformed_sales_number_data.sql
+2022-03-07 11:18:28.018482 (MainThread): 
+Done. PASS=0 WARN=0 ERROR=1 SKIP=5 TOTAL=6
+2022-03-07 11:18:28.104479 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BB69506A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BB6950670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BB691FEE0>]}
+2022-03-07 11:18:28.105477 (MainThread): Flushing usage events
+2022-03-07 11:24:08.683692 (MainThread): Running with dbt=0.20.2
+2022-03-07 11:24:08.967690 (MainThread): running dbt with arguments Namespace(record_timing_info=None, debug=False, log_format='default', write_json=True, use_colors=None, strict=False, warn_error=False, partial_parse=None, single_threaded=False, test_new_parser=False, use_experimental_parser=False, project_dir=None, profiles_dir='C:\\Users\\Abreham\\.dbt', profile=None, target=None, vars='{}', log_cache_events=False, use_cache=True, fail_fast=False, threads=None, version_check=True, models=None, exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+2022-03-07 11:24:08.970687 (MainThread): Tracking: tracking
+2022-03-07 11:24:08.996693 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C617DCF280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C62776DE80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C62776DD90>]}
+2022-03-07 11:24:09.029686 (MainThread): Partial parsing not enabled
+2022-03-07 11:24:09.093530 (MainThread): Parsing macros\adapters.sql
+2022-03-07 11:24:09.159560 (MainThread): Parsing macros\catalog.sql
+2022-03-07 11:24:09.165531 (MainThread): Parsing macros\relations.sql
+2022-03-07 11:24:09.168529 (MainThread): Parsing macros\materializations\snapshot_merge.sql
+2022-03-07 11:24:09.172529 (MainThread): Parsing macros\core.sql
+2022-03-07 11:24:09.189531 (MainThread): Parsing macros\adapters\common.sql
+2022-03-07 11:24:09.408535 (MainThread): Parsing macros\etc\datetime.sql
+2022-03-07 11:24:09.452531 (MainThread): Parsing macros\etc\get_custom_alias.sql
+2022-03-07 11:24:09.455531 (MainThread): Parsing macros\etc\get_custom_database.sql
+2022-03-07 11:24:09.461534 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2022-03-07 11:24:09.468534 (MainThread): Parsing macros\etc\is_incremental.sql
+2022-03-07 11:24:09.475539 (MainThread): Parsing macros\etc\query.sql
+2022-03-07 11:24:09.485533 (MainThread): Parsing macros\materializations\helpers.sql
+2022-03-07 11:24:09.527531 (MainThread): Parsing macros\materializations\test.sql
+2022-03-07 11:24:09.546534 (MainThread): Parsing macros\materializations\common\merge.sql
+2022-03-07 11:24:09.590529 (MainThread): Parsing macros\materializations\incremental\helpers.sql
+2022-03-07 11:24:09.595530 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2022-03-07 11:24:09.615534 (MainThread): Parsing macros\materializations\seed\seed.sql
+2022-03-07 11:24:09.680539 (MainThread): Parsing macros\materializations\snapshot\snapshot.sql
+2022-03-07 11:24:09.780534 (MainThread): Parsing macros\materializations\snapshot\snapshot_merge.sql
+2022-03-07 11:24:09.784534 (MainThread): Parsing macros\materializations\snapshot\strategies.sql
+2022-03-07 11:24:09.838541 (MainThread): Parsing macros\materializations\table\table.sql
+2022-03-07 11:24:09.859528 (MainThread): Parsing macros\materializations\view\create_or_replace_view.sql
+2022-03-07 11:24:09.873538 (MainThread): Parsing macros\materializations\view\view.sql
+2022-03-07 11:24:09.893537 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2022-03-07 11:24:09.899530 (MainThread): Parsing macros\schema_tests\not_null.sql
+2022-03-07 11:24:09.902534 (MainThread): Parsing macros\schema_tests\relationships.sql
+2022-03-07 11:24:09.906532 (MainThread): Parsing macros\schema_tests\unique.sql
+2022-03-07 11:24:10.559532 (MainThread): Acquiring new postgres connection "model.Analytics_dbt. meeting_per_week".
+2022-03-07 11:24:10.631531 (MainThread): Acquiring new postgres connection "model.Analytics_dbt.deal_value_per_week".
+2022-03-07 11:24:10.653530 (MainThread): Acquiring new postgres connection "model.Analytics_dbt.email_per_week".
+2022-03-07 11:24:10.672533 (MainThread): Acquiring new postgres connection "model.Analytics_dbt.ios_per_week".
+2022-03-07 11:24:10.699531 (MainThread): Acquiring new postgres connection "model.Analytics_dbt.rfps_per_week".
+2022-03-07 11:24:10.713534 (MainThread): Acquiring new postgres connection "model.Analytics_dbt.transformed_sales_number_data".
+2022-03-07 11:24:10.822538 (MainThread): [WARNING]: Test 'test.Analytics_dbt.unique_my_first_dbt_model_id.5ef3c774bb' (models\Sales Numbers\schema.yml) depends on a node named 'my_first_dbt_model' which was not found
+2022-03-07 11:24:10.826535 (MainThread): [WARNING]: Test 'test.Analytics_dbt.not_null_my_first_dbt_model_id.f479667b44' (models\Sales Numbers\schema.yml) depends on a node named 'my_first_dbt_model' which was not found
+2022-03-07 11:24:10.830534 (MainThread): [WARNING]: Test 'test.Analytics_dbt.unique_my_second_dbt_model_id.bc96125570' (models\Sales Numbers\schema.yml) depends on a node named 'my_second_dbt_model' which was not found
+2022-03-07 11:24:10.835537 (MainThread): [WARNING]: Test 'test.Analytics_dbt.not_null_my_second_dbt_model_id.dc1d13aa6d' (models\Sales Numbers\schema.yml) depends on a node named 'my_second_dbt_model' which was not found
+2022-03-07 11:24:10.949539 (MainThread): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.Analytics_dbt.example
+
+2022-03-07 11:24:10.980576 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '530c8bb1-3087-4481-baf4-b447a0d53c0b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C6279B1F10>]}
+2022-03-07 11:24:11.032542 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '530c8bb1-3087-4481-baf4-b447a0d53c0b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C6278E5D00>]}
+2022-03-07 11:24:11.035551 (MainThread): Found 6 models, 0 tests, 0 snapshots, 0 analyses, 147 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2022-03-07 11:24:11.053543 (MainThread): 
+2022-03-07 11:24:11.055544 (MainThread): Acquiring new postgres connection "master".
+2022-03-07 11:24:11.070541 (ThreadPoolExecutor-0_0): Acquiring new postgres connection "list_adludio".
+2022-03-07 11:24:11.185538 (ThreadPoolExecutor-0_0): Using postgres connection "list_adludio".
+2022-03-07 11:24:11.187540 (ThreadPoolExecutor-0_0): On list_adludio: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "connection_name": "list_adludio"} */
+
+    select distinct nspname from pg_namespace
+  
+2022-03-07 11:24:11.188544 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2022-03-07 11:24:11.408627 (ThreadPoolExecutor-0_0): SQL status: SELECT 4 in 0.22 seconds
+2022-03-07 11:24:11.424627 (ThreadPoolExecutor-0_0): On list_adludio: Close
+2022-03-07 11:24:11.434625 (ThreadPoolExecutor-1_0): Acquiring new postgres connection "list_adludio_public".
+2022-03-07 11:24:11.464629 (ThreadPoolExecutor-1_0): Using postgres connection "list_adludio_public".
+2022-03-07 11:24:11.465628 (ThreadPoolExecutor-1_0): On list_adludio_public: BEGIN
+2022-03-07 11:24:11.466203 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state init
+2022-03-07 11:24:11.597108 (ThreadPoolExecutor-1_0): SQL status: BEGIN in 0.13 seconds
+2022-03-07 11:24:11.598114 (ThreadPoolExecutor-1_0): Using postgres connection "list_adludio_public".
+2022-03-07 11:24:11.598114 (ThreadPoolExecutor-1_0): On list_adludio_public: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "connection_name": "list_adludio_public"} */
+select
+      'adludio' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'adludio' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+  
+2022-03-07 11:24:11.625113 (ThreadPoolExecutor-1_0): SQL status: SELECT 1 in 0.03 seconds
+2022-03-07 11:24:11.627112 (ThreadPoolExecutor-1_0): On list_adludio_public: ROLLBACK
+2022-03-07 11:24:11.628109 (ThreadPoolExecutor-1_0): On list_adludio_public: Close
+2022-03-07 11:24:11.643109 (MainThread): Using postgres connection "master".
+2022-03-07 11:24:11.643109 (MainThread): On master: BEGIN
+2022-03-07 11:24:11.643109 (MainThread): Opening a new connection, currently in state init
+2022-03-07 11:24:11.747108 (MainThread): SQL status: BEGIN in 0.10 seconds
+2022-03-07 11:24:11.747108 (MainThread): Using postgres connection "master".
+2022-03-07 11:24:11.748111 (MainThread): On master: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+2022-03-07 11:24:11.775932 (MainThread): SQL status: SELECT 0 in 0.03 seconds
+2022-03-07 11:24:11.776505 (MainThread): On master: ROLLBACK
+2022-03-07 11:24:11.776505 (MainThread): Using postgres connection "master".
+2022-03-07 11:24:11.776505 (MainThread): On master: BEGIN
+2022-03-07 11:24:11.777476 (MainThread): SQL status: BEGIN in 0.00 seconds
+2022-03-07 11:24:11.777476 (MainThread): On master: COMMIT
+2022-03-07 11:24:11.778476 (MainThread): Using postgres connection "master".
+2022-03-07 11:24:11.778476 (MainThread): On master: COMMIT
+2022-03-07 11:24:11.778476 (MainThread): SQL status: COMMIT in 0.00 seconds
+2022-03-07 11:24:11.778476 (MainThread): On master: Close
+2022-03-07 11:24:11.779476 (MainThread): 08:24:11 | Concurrency: 1 threads (target='dev')
+2022-03-07 11:24:11.781478 (MainThread): 08:24:11 | 
+2022-03-07 11:24:11.792487 (Thread-1): Began running node model.Analytics_dbt.transformed_sales_number_data
+2022-03-07 11:24:11.793480 (Thread-1): 08:24:11 | 1 of 6 START table model public.transformed_sales_number_data........ [RUN]
+2022-03-07 11:24:11.795480 (Thread-1): Acquiring new postgres connection "model.Analytics_dbt.transformed_sales_number_data".
+2022-03-07 11:24:11.796482 (Thread-1): Compiling model.Analytics_dbt.transformed_sales_number_data
+2022-03-07 11:24:11.812485 (Thread-1): Writing injected SQL for node "model.Analytics_dbt.transformed_sales_number_data"
+2022-03-07 11:24:11.822485 (Thread-1): finished collecting timing info
+2022-03-07 11:24:11.942479 (Thread-1): Using postgres connection "model.Analytics_dbt.transformed_sales_number_data".
+2022-03-07 11:24:11.943479 (Thread-1): On model.Analytics_dbt.transformed_sales_number_data: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "node_id": "model.Analytics_dbt.transformed_sales_number_data"} */
+drop table if exists "adludio"."public"."transformed_sales_number_data__dbt_tmp" cascade
+2022-03-07 11:24:11.943479 (Thread-1): Opening a new connection, currently in state init
+2022-03-07 11:24:12.075479 (Thread-1): SQL status: DROP TABLE in 0.13 seconds
+2022-03-07 11:24:12.081481 (Thread-1): Using postgres connection "model.Analytics_dbt.transformed_sales_number_data".
+2022-03-07 11:24:12.081481 (Thread-1): On model.Analytics_dbt.transformed_sales_number_data: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "node_id": "model.Analytics_dbt.transformed_sales_number_data"} */
+drop table if exists "adludio"."public"."transformed_sales_number_data__dbt_backup" cascade
+2022-03-07 11:24:12.082477 (Thread-1): SQL status: DROP TABLE in 0.00 seconds
+2022-03-07 11:24:12.110478 (Thread-1): Writing runtime SQL for node "model.Analytics_dbt.transformed_sales_number_data"
+2022-03-07 11:24:12.112478 (Thread-1): Using postgres connection "model.Analytics_dbt.transformed_sales_number_data".
+2022-03-07 11:24:12.113480 (Thread-1): On model.Analytics_dbt.transformed_sales_number_data: BEGIN
+2022-03-07 11:24:12.113480 (Thread-1): SQL status: BEGIN in 0.00 seconds
+2022-03-07 11:24:12.114481 (Thread-1): Using postgres connection "model.Analytics_dbt.transformed_sales_number_data".
+2022-03-07 11:24:12.114481 (Thread-1): On model.Analytics_dbt.transformed_sales_number_data: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "node_id": "model.Analytics_dbt.transformed_sales_number_data"} */
+
+
+  create  table "adludio"."public"."transformed_sales_number_data__dbt_tmp"
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select *, DATE_PART('week', to_date("Deal_created_at", 'DD/MM/YYYY')) as week,
+    DATE_PART('year', to_date("Deal_created_at", 'DD/MM/YYYY')) as year,
+    EXTRACT (QUARTER FROM to_date("Deal_created_at", 'DD/MM/YYYY')) as quarter
+
+    from sales_table 
+
+)
+
+select "Deal_id" as id, "Deal_created_at" as Deal_created_at,
+"Deal_Value" as deal_value, "Deal_Stage" as deal_stage,
+
+    case when "Deal_Stage" = 'Meeting' then 1 else 0 end as deal_meeting_count,
+    case when "Deal_Stage" = 'IO Sent' then 1 else 0 end as deal_iosent_count,
+    case when "Deal_Stage" = 'RFP' then 1 else 0 end  as deal_rfp_count,
+"Deal _Status" as deal_status, "Deal_Email_messages_count" as deal_email_messages_count,
+"Deal_Total_activities" as deal_total_activities, "Deal_Currency" as deal_currency,
+"Deal_Region" as deal_region, week,quarter, year,
+CONCAT  (year, '_', week) AS year_week,
+CONCAT  (year, '_', quarter) AS year_quarter
+from source_data
+
+ORDER BY year_week
+
+ 
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+2022-03-07 11:24:12.286482 (Thread-1): SQL status: SELECT 2032 in 0.17 seconds
+2022-03-07 11:24:12.308481 (Thread-1): Using postgres connection "model.Analytics_dbt.transformed_sales_number_data".
+2022-03-07 11:24:12.309481 (Thread-1): On model.Analytics_dbt.transformed_sales_number_data: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "node_id": "model.Analytics_dbt.transformed_sales_number_data"} */
+alter table "adludio"."public"."transformed_sales_number_data__dbt_tmp" rename to "transformed_sales_number_data"
+2022-03-07 11:24:12.312480 (Thread-1): SQL status: ALTER TABLE in 0.00 seconds
+2022-03-07 11:24:12.362478 (Thread-1): On model.Analytics_dbt.transformed_sales_number_data: COMMIT
+2022-03-07 11:24:12.362478 (Thread-1): Using postgres connection "model.Analytics_dbt.transformed_sales_number_data".
+2022-03-07 11:24:12.363479 (Thread-1): On model.Analytics_dbt.transformed_sales_number_data: COMMIT
+2022-03-07 11:24:12.367478 (Thread-1): SQL status: COMMIT in 0.00 seconds
+2022-03-07 11:24:12.380480 (Thread-1): Using postgres connection "model.Analytics_dbt.transformed_sales_number_data".
+2022-03-07 11:24:12.381480 (Thread-1): On model.Analytics_dbt.transformed_sales_number_data: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "node_id": "model.Analytics_dbt.transformed_sales_number_data"} */
+drop table if exists "adludio"."public"."transformed_sales_number_data__dbt_backup" cascade
+2022-03-07 11:24:12.382476 (Thread-1): SQL status: DROP TABLE in 0.00 seconds
+2022-03-07 11:24:12.385478 (Thread-1): finished collecting timing info
+2022-03-07 11:24:12.386480 (Thread-1): On model.Analytics_dbt.transformed_sales_number_data: Close
+2022-03-07 11:24:12.387479 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '530c8bb1-3087-4481-baf4-b447a0d53c0b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C6278B95E0>]}
+2022-03-07 11:24:12.389487 (Thread-1): 08:24:12 | 1 of 6 OK created table model public.transformed_sales_number_data... [SELECT 2032 in 0.59s]
+2022-03-07 11:24:12.391484 (Thread-1): Finished running node model.Analytics_dbt.transformed_sales_number_data
+2022-03-07 11:24:12.393483 (Thread-1): Began running node model.Analytics_dbt. meeting_per_week
+2022-03-07 11:24:12.394483 (Thread-1): 08:24:12 | 2 of 6 START table model public.meeting_per_week..................... [RUN]
+2022-03-07 11:24:12.398484 (Thread-1): Acquiring new postgres connection "model.Analytics_dbt. meeting_per_week".
+2022-03-07 11:24:12.398484 (Thread-1): Compiling model.Analytics_dbt. meeting_per_week
+2022-03-07 11:24:12.412483 (Thread-1): Writing injected SQL for node "model.Analytics_dbt. meeting_per_week"
+2022-03-07 11:24:12.414479 (Thread-1): finished collecting timing info
+2022-03-07 11:24:12.437483 (Thread-1): Using postgres connection "model.Analytics_dbt. meeting_per_week".
+2022-03-07 11:24:12.437483 (Thread-1): On model.Analytics_dbt. meeting_per_week: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "node_id": "model.Analytics_dbt. meeting_per_week"} */
+drop table if exists "adludio"."public"." meeting_per_week__dbt_tmp" cascade
+2022-03-07 11:24:12.438484 (Thread-1): Opening a new connection, currently in state closed
+2022-03-07 11:24:12.664226 (Thread-1): SQL status: DROP TABLE in 0.23 seconds
+2022-03-07 11:24:12.673218 (Thread-1): Using postgres connection "model.Analytics_dbt. meeting_per_week".
+2022-03-07 11:24:12.673218 (Thread-1): On model.Analytics_dbt. meeting_per_week: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "node_id": "model.Analytics_dbt. meeting_per_week"} */
+drop table if exists "adludio"."public"." meeting_per_week__dbt_backup" cascade
+2022-03-07 11:24:12.675221 (Thread-1): SQL status: DROP TABLE in 0.00 seconds
+2022-03-07 11:24:12.681218 (Thread-1): Writing runtime SQL for node "model.Analytics_dbt. meeting_per_week"
+2022-03-07 11:24:12.683220 (Thread-1): Using postgres connection "model.Analytics_dbt. meeting_per_week".
+2022-03-07 11:24:12.684218 (Thread-1): On model.Analytics_dbt. meeting_per_week: BEGIN
+2022-03-07 11:24:12.685220 (Thread-1): SQL status: BEGIN in 0.00 seconds
+2022-03-07 11:24:12.685220 (Thread-1): Using postgres connection "model.Analytics_dbt. meeting_per_week".
+2022-03-07 11:24:12.686220 (Thread-1): On model.Analytics_dbt. meeting_per_week: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "node_id": "model.Analytics_dbt. meeting_per_week"} */
+
+
+  create  table "adludio"."public"." meeting_per_week__dbt_tmp"
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+    select * from "adludio"."public"."transformed_sales_number_data"
+)
+
+select AVG(deal_meeting_count)*7 as avg_meeting_count, year_quarter
+from source_data
+group by year_quarter
+ORDER BY year_quarter
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+2022-03-07 11:24:12.728218 (Thread-1): SQL status: SELECT 8 in 0.04 seconds
+2022-03-07 11:24:12.734216 (Thread-1): Using postgres connection "model.Analytics_dbt. meeting_per_week".
+2022-03-07 11:24:12.734216 (Thread-1): On model.Analytics_dbt. meeting_per_week: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "node_id": "model.Analytics_dbt. meeting_per_week"} */
+alter table "adludio"."public"." meeting_per_week__dbt_tmp" rename to "meeting_per_week"
+2022-03-07 11:24:12.736219 (Thread-1): SQL status: ALTER TABLE in 0.00 seconds
+2022-03-07 11:24:12.741219 (Thread-1): On model.Analytics_dbt. meeting_per_week: COMMIT
+2022-03-07 11:24:12.741219 (Thread-1): Using postgres connection "model.Analytics_dbt. meeting_per_week".
+2022-03-07 11:24:12.741219 (Thread-1): On model.Analytics_dbt. meeting_per_week: COMMIT
+2022-03-07 11:24:12.744218 (Thread-1): SQL status: COMMIT in 0.00 seconds
+2022-03-07 11:24:12.751220 (Thread-1): Using postgres connection "model.Analytics_dbt. meeting_per_week".
+2022-03-07 11:24:12.751220 (Thread-1): On model.Analytics_dbt. meeting_per_week: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "node_id": "model.Analytics_dbt. meeting_per_week"} */
+drop table if exists "adludio"."public"." meeting_per_week__dbt_backup" cascade
+2022-03-07 11:24:12.752218 (Thread-1): SQL status: DROP TABLE in 0.00 seconds
+2022-03-07 11:24:12.757218 (Thread-1): finished collecting timing info
+2022-03-07 11:24:12.757218 (Thread-1): On model.Analytics_dbt. meeting_per_week: Close
+2022-03-07 11:24:12.759220 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '530c8bb1-3087-4481-baf4-b447a0d53c0b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C6278B95E0>]}
+2022-03-07 11:24:12.760220 (Thread-1): 08:24:12 | 2 of 6 OK created table model public.meeting_per_week................ [SELECT 8 in 0.36s]
+2022-03-07 11:24:12.763222 (Thread-1): Finished running node model.Analytics_dbt. meeting_per_week
+2022-03-07 11:24:12.763222 (Thread-1): Began running node model.Analytics_dbt.deal_value_per_week
+2022-03-07 11:24:12.764220 (Thread-1): 08:24:12 | 3 of 6 START table model public.deal_value_per_week.................. [RUN]
+2022-03-07 11:24:12.767219 (Thread-1): Acquiring new postgres connection "model.Analytics_dbt.deal_value_per_week".
+2022-03-07 11:24:12.768222 (Thread-1): Compiling model.Analytics_dbt.deal_value_per_week
+2022-03-07 11:24:12.787221 (Thread-1): Writing injected SQL for node "model.Analytics_dbt.deal_value_per_week"
+2022-03-07 11:24:12.790222 (Thread-1): finished collecting timing info
+2022-03-07 11:24:12.810221 (Thread-1): Using postgres connection "model.Analytics_dbt.deal_value_per_week".
+2022-03-07 11:24:12.811220 (Thread-1): On model.Analytics_dbt.deal_value_per_week: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "node_id": "model.Analytics_dbt.deal_value_per_week"} */
+drop table if exists "adludio"."public"."deal_value_per_week__dbt_tmp" cascade
+2022-03-07 11:24:12.811220 (Thread-1): Opening a new connection, currently in state closed
+2022-03-07 11:24:12.975217 (Thread-1): SQL status: DROP TABLE in 0.16 seconds
+2022-03-07 11:24:12.983215 (Thread-1): Using postgres connection "model.Analytics_dbt.deal_value_per_week".
+2022-03-07 11:24:12.983215 (Thread-1): On model.Analytics_dbt.deal_value_per_week: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "node_id": "model.Analytics_dbt.deal_value_per_week"} */
+drop table if exists "adludio"."public"."deal_value_per_week__dbt_backup" cascade
+2022-03-07 11:24:12.984218 (Thread-1): SQL status: DROP TABLE in 0.00 seconds
+2022-03-07 11:24:12.989224 (Thread-1): Writing runtime SQL for node "model.Analytics_dbt.deal_value_per_week"
+2022-03-07 11:24:12.991220 (Thread-1): Using postgres connection "model.Analytics_dbt.deal_value_per_week".
+2022-03-07 11:24:12.991220 (Thread-1): On model.Analytics_dbt.deal_value_per_week: BEGIN
+2022-03-07 11:24:12.992220 (Thread-1): SQL status: BEGIN in 0.00 seconds
+2022-03-07 11:24:12.993221 (Thread-1): Using postgres connection "model.Analytics_dbt.deal_value_per_week".
+2022-03-07 11:24:12.993221 (Thread-1): On model.Analytics_dbt.deal_value_per_week: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "node_id": "model.Analytics_dbt.deal_value_per_week"} */
+
+
+  create  table "adludio"."public"."deal_value_per_week__dbt_tmp"
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+    select * from "adludio"."public"."transformed_sales_number_data"
+)
+
+select AVG(deal_value)*7 as avg_deal_value, year_quarter
+from source_data
+group by year_quarter
+ORDER BY year_quarter 
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+2022-03-07 11:24:13.028222 (Thread-1): SQL status: SELECT 8 in 0.03 seconds
+2022-03-07 11:24:13.038220 (Thread-1): Using postgres connection "model.Analytics_dbt.deal_value_per_week".
+2022-03-07 11:24:13.038220 (Thread-1): On model.Analytics_dbt.deal_value_per_week: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "node_id": "model.Analytics_dbt.deal_value_per_week"} */
+alter table "adludio"."public"."deal_value_per_week__dbt_tmp" rename to "deal_value_per_week"
+2022-03-07 11:24:13.040220 (Thread-1): SQL status: ALTER TABLE in 0.00 seconds
+2022-03-07 11:24:13.045220 (Thread-1): On model.Analytics_dbt.deal_value_per_week: COMMIT
+2022-03-07 11:24:13.046220 (Thread-1): Using postgres connection "model.Analytics_dbt.deal_value_per_week".
+2022-03-07 11:24:13.047220 (Thread-1): On model.Analytics_dbt.deal_value_per_week: COMMIT
+2022-03-07 11:24:13.049220 (Thread-1): SQL status: COMMIT in 0.00 seconds
+2022-03-07 11:24:13.055218 (Thread-1): Using postgres connection "model.Analytics_dbt.deal_value_per_week".
+2022-03-07 11:24:13.055218 (Thread-1): On model.Analytics_dbt.deal_value_per_week: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "node_id": "model.Analytics_dbt.deal_value_per_week"} */
+drop table if exists "adludio"."public"."deal_value_per_week__dbt_backup" cascade
+2022-03-07 11:24:13.056216 (Thread-1): SQL status: DROP TABLE in 0.00 seconds
+2022-03-07 11:24:13.061221 (Thread-1): finished collecting timing info
+2022-03-07 11:24:13.061221 (Thread-1): On model.Analytics_dbt.deal_value_per_week: Close
+2022-03-07 11:24:13.063221 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '530c8bb1-3087-4481-baf4-b447a0d53c0b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C627A761C0>]}
+2022-03-07 11:24:13.064218 (Thread-1): 08:24:13 | 3 of 6 OK created table model public.deal_value_per_week............. [SELECT 8 in 0.30s]
+2022-03-07 11:24:13.071220 (Thread-1): Finished running node model.Analytics_dbt.deal_value_per_week
+2022-03-07 11:24:13.073221 (Thread-1): Began running node model.Analytics_dbt.email_per_week
+2022-03-07 11:24:13.074221 (Thread-1): 08:24:13 | 4 of 6 START table model public.email_per_week....................... [RUN]
+2022-03-07 11:24:13.083219 (Thread-1): Acquiring new postgres connection "model.Analytics_dbt.email_per_week".
+2022-03-07 11:24:13.083219 (Thread-1): Compiling model.Analytics_dbt.email_per_week
+2022-03-07 11:24:13.100223 (Thread-1): Writing injected SQL for node "model.Analytics_dbt.email_per_week"
+2022-03-07 11:24:13.102222 (Thread-1): finished collecting timing info
+2022-03-07 11:24:13.131222 (Thread-1): Using postgres connection "model.Analytics_dbt.email_per_week".
+2022-03-07 11:24:13.138227 (Thread-1): On model.Analytics_dbt.email_per_week: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "node_id": "model.Analytics_dbt.email_per_week"} */
+drop table if exists "adludio"."public"."email_per_week__dbt_tmp" cascade
+2022-03-07 11:24:13.138227 (Thread-1): Opening a new connection, currently in state closed
+2022-03-07 11:24:13.332219 (Thread-1): SQL status: DROP TABLE in 0.19 seconds
+2022-03-07 11:24:13.340220 (Thread-1): Using postgres connection "model.Analytics_dbt.email_per_week".
+2022-03-07 11:24:13.341221 (Thread-1): On model.Analytics_dbt.email_per_week: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "node_id": "model.Analytics_dbt.email_per_week"} */
+drop table if exists "adludio"."public"."email_per_week__dbt_backup" cascade
+2022-03-07 11:24:13.342220 (Thread-1): SQL status: DROP TABLE in 0.00 seconds
+2022-03-07 11:24:13.347221 (Thread-1): Writing runtime SQL for node "model.Analytics_dbt.email_per_week"
+2022-03-07 11:24:13.350217 (Thread-1): Using postgres connection "model.Analytics_dbt.email_per_week".
+2022-03-07 11:24:13.350217 (Thread-1): On model.Analytics_dbt.email_per_week: BEGIN
+2022-03-07 11:24:13.351222 (Thread-1): SQL status: BEGIN in 0.00 seconds
+2022-03-07 11:24:13.352220 (Thread-1): Using postgres connection "model.Analytics_dbt.email_per_week".
+2022-03-07 11:24:13.352220 (Thread-1): On model.Analytics_dbt.email_per_week: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "node_id": "model.Analytics_dbt.email_per_week"} */
+
+
+  create  table "adludio"."public"."email_per_week__dbt_tmp"
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+    select * from "adludio"."public"."transformed_sales_number_data"
+)
+
+select AVG(deal_email_messages_count)*7 as avg_email_count, year_quarter
+from source_data
+group by year_quarter
+ORDER BY year_quarter
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+2022-03-07 11:24:13.391220 (Thread-1): SQL status: SELECT 8 in 0.04 seconds
+2022-03-07 11:24:13.399232 (Thread-1): Using postgres connection "model.Analytics_dbt.email_per_week".
+2022-03-07 11:24:13.400230 (Thread-1): On model.Analytics_dbt.email_per_week: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "node_id": "model.Analytics_dbt.email_per_week"} */
+alter table "adludio"."public"."email_per_week__dbt_tmp" rename to "email_per_week"
+2022-03-07 11:24:13.402221 (Thread-1): SQL status: ALTER TABLE in 0.00 seconds
+2022-03-07 11:24:13.408223 (Thread-1): On model.Analytics_dbt.email_per_week: COMMIT
+2022-03-07 11:24:13.408223 (Thread-1): Using postgres connection "model.Analytics_dbt.email_per_week".
+2022-03-07 11:24:13.409220 (Thread-1): On model.Analytics_dbt.email_per_week: COMMIT
+2022-03-07 11:24:13.411222 (Thread-1): SQL status: COMMIT in 0.00 seconds
+2022-03-07 11:24:13.417220 (Thread-1): Using postgres connection "model.Analytics_dbt.email_per_week".
+2022-03-07 11:24:13.417220 (Thread-1): On model.Analytics_dbt.email_per_week: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "node_id": "model.Analytics_dbt.email_per_week"} */
+drop table if exists "adludio"."public"."email_per_week__dbt_backup" cascade
+2022-03-07 11:24:13.418220 (Thread-1): SQL status: DROP TABLE in 0.00 seconds
+2022-03-07 11:24:13.422220 (Thread-1): finished collecting timing info
+2022-03-07 11:24:13.423216 (Thread-1): On model.Analytics_dbt.email_per_week: Close
+2022-03-07 11:24:13.425218 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '530c8bb1-3087-4481-baf4-b447a0d53c0b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C627A09FA0>]}
+2022-03-07 11:24:13.426221 (Thread-1): 08:24:13 | 4 of 6 OK created table model public.email_per_week.................. [SELECT 8 in 0.34s]
+2022-03-07 11:24:13.428220 (Thread-1): Finished running node model.Analytics_dbt.email_per_week
+2022-03-07 11:24:13.429223 (Thread-1): Began running node model.Analytics_dbt.ios_per_week
+2022-03-07 11:24:13.430223 (Thread-1): 08:24:13 | 5 of 6 START table model public.ios_per_week......................... [RUN]
+2022-03-07 11:24:13.432221 (Thread-1): Acquiring new postgres connection "model.Analytics_dbt.ios_per_week".
+2022-03-07 11:24:13.433227 (Thread-1): Compiling model.Analytics_dbt.ios_per_week
+2022-03-07 11:24:13.445223 (Thread-1): Writing injected SQL for node "model.Analytics_dbt.ios_per_week"
+2022-03-07 11:24:13.450258 (Thread-1): finished collecting timing info
+2022-03-07 11:24:13.462217 (Thread-1): Using postgres connection "model.Analytics_dbt.ios_per_week".
+2022-03-07 11:24:13.479220 (Thread-1): On model.Analytics_dbt.ios_per_week: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "node_id": "model.Analytics_dbt.ios_per_week"} */
+drop table if exists "adludio"."public"."ios_per_week__dbt_tmp" cascade
+2022-03-07 11:24:13.485272 (Thread-1): Opening a new connection, currently in state closed
+2022-03-07 11:24:13.678820 (Thread-1): SQL status: DROP TABLE in 0.19 seconds
+2022-03-07 11:24:13.686819 (Thread-1): Using postgres connection "model.Analytics_dbt.ios_per_week".
+2022-03-07 11:24:13.687819 (Thread-1): On model.Analytics_dbt.ios_per_week: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "node_id": "model.Analytics_dbt.ios_per_week"} */
+drop table if exists "adludio"."public"."ios_per_week__dbt_backup" cascade
+2022-03-07 11:24:13.688819 (Thread-1): SQL status: DROP TABLE in 0.00 seconds
+2022-03-07 11:24:13.694817 (Thread-1): Writing runtime SQL for node "model.Analytics_dbt.ios_per_week"
+2022-03-07 11:24:13.697820 (Thread-1): Using postgres connection "model.Analytics_dbt.ios_per_week".
+2022-03-07 11:24:13.698821 (Thread-1): On model.Analytics_dbt.ios_per_week: BEGIN
+2022-03-07 11:24:13.699818 (Thread-1): SQL status: BEGIN in 0.00 seconds
+2022-03-07 11:24:13.699818 (Thread-1): Using postgres connection "model.Analytics_dbt.ios_per_week".
+2022-03-07 11:24:13.700822 (Thread-1): On model.Analytics_dbt.ios_per_week: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "node_id": "model.Analytics_dbt.ios_per_week"} */
+
+
+  create  table "adludio"."public"."ios_per_week__dbt_tmp"
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+    select * from "adludio"."public"."transformed_sales_number_data"
+)
+
+select AVG(deal_iosent_count)*7 as avg_iosent_count, year_quarter
+from source_data
+group by year_quarter
+ORDER BY year_quarter
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+2022-03-07 11:24:13.736820 (Thread-1): SQL status: SELECT 8 in 0.04 seconds
+2022-03-07 11:24:13.744818 (Thread-1): Using postgres connection "model.Analytics_dbt.ios_per_week".
+2022-03-07 11:24:13.744818 (Thread-1): On model.Analytics_dbt.ios_per_week: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "node_id": "model.Analytics_dbt.ios_per_week"} */
+alter table "adludio"."public"."ios_per_week__dbt_tmp" rename to "ios_per_week"
+2022-03-07 11:24:13.746818 (Thread-1): SQL status: ALTER TABLE in 0.00 seconds
+2022-03-07 11:24:13.750817 (Thread-1): On model.Analytics_dbt.ios_per_week: COMMIT
+2022-03-07 11:24:13.750817 (Thread-1): Using postgres connection "model.Analytics_dbt.ios_per_week".
+2022-03-07 11:24:13.750817 (Thread-1): On model.Analytics_dbt.ios_per_week: COMMIT
+2022-03-07 11:24:13.753828 (Thread-1): SQL status: COMMIT in 0.00 seconds
+2022-03-07 11:24:13.763822 (Thread-1): Using postgres connection "model.Analytics_dbt.ios_per_week".
+2022-03-07 11:24:13.764821 (Thread-1): On model.Analytics_dbt.ios_per_week: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "node_id": "model.Analytics_dbt.ios_per_week"} */
+drop table if exists "adludio"."public"."ios_per_week__dbt_backup" cascade
+2022-03-07 11:24:13.765822 (Thread-1): SQL status: DROP TABLE in 0.00 seconds
+2022-03-07 11:24:13.769814 (Thread-1): finished collecting timing info
+2022-03-07 11:24:13.770821 (Thread-1): On model.Analytics_dbt.ios_per_week: Close
+2022-03-07 11:24:13.771820 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '530c8bb1-3087-4481-baf4-b447a0d53c0b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C627A79B50>]}
+2022-03-07 11:24:13.773820 (Thread-1): 08:24:13 | 5 of 6 OK created table model public.ios_per_week.................... [SELECT 8 in 0.34s]
+2022-03-07 11:24:13.776818 (Thread-1): Finished running node model.Analytics_dbt.ios_per_week
+2022-03-07 11:24:13.777820 (Thread-1): Began running node model.Analytics_dbt.rfps_per_week
+2022-03-07 11:24:13.778822 (Thread-1): 08:24:13 | 6 of 6 START table model public.rfps_per_week........................ [RUN]
+2022-03-07 11:24:13.781817 (Thread-1): Acquiring new postgres connection "model.Analytics_dbt.rfps_per_week".
+2022-03-07 11:24:13.782822 (Thread-1): Compiling model.Analytics_dbt.rfps_per_week
+2022-03-07 11:24:13.795819 (Thread-1): Writing injected SQL for node "model.Analytics_dbt.rfps_per_week"
+2022-03-07 11:24:13.800821 (Thread-1): finished collecting timing info
+2022-03-07 11:24:13.811819 (Thread-1): Using postgres connection "model.Analytics_dbt.rfps_per_week".
+2022-03-07 11:24:13.811819 (Thread-1): On model.Analytics_dbt.rfps_per_week: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "node_id": "model.Analytics_dbt.rfps_per_week"} */
+drop table if exists "adludio"."public"."rfps_per_week__dbt_tmp" cascade
+2022-03-07 11:24:13.812818 (Thread-1): Opening a new connection, currently in state closed
+2022-03-07 11:24:13.992817 (Thread-1): SQL status: DROP TABLE in 0.18 seconds
+2022-03-07 11:24:14.000818 (Thread-1): Using postgres connection "model.Analytics_dbt.rfps_per_week".
+2022-03-07 11:24:14.000818 (Thread-1): On model.Analytics_dbt.rfps_per_week: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "node_id": "model.Analytics_dbt.rfps_per_week"} */
+drop table if exists "adludio"."public"."rfps_per_week__dbt_backup" cascade
+2022-03-07 11:24:14.001820 (Thread-1): SQL status: DROP TABLE in 0.00 seconds
+2022-03-07 11:24:14.007817 (Thread-1): Writing runtime SQL for node "model.Analytics_dbt.rfps_per_week"
+2022-03-07 11:24:14.009818 (Thread-1): Using postgres connection "model.Analytics_dbt.rfps_per_week".
+2022-03-07 11:24:14.010821 (Thread-1): On model.Analytics_dbt.rfps_per_week: BEGIN
+2022-03-07 11:24:14.011818 (Thread-1): SQL status: BEGIN in 0.00 seconds
+2022-03-07 11:24:14.011818 (Thread-1): Using postgres connection "model.Analytics_dbt.rfps_per_week".
+2022-03-07 11:24:14.011818 (Thread-1): On model.Analytics_dbt.rfps_per_week: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "node_id": "model.Analytics_dbt.rfps_per_week"} */
+
+
+  create  table "adludio"."public"."rfps_per_week__dbt_tmp"
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+    select * from "adludio"."public"."transformed_sales_number_data"
+)
+
+select AVG(deal_rfp_count)*7 as avg_rfps_count, year_quarter
+from source_data
+group by year_quarter
+ORDER BY year_quarter
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+2022-03-07 11:24:14.042822 (Thread-1): SQL status: SELECT 8 in 0.03 seconds
+2022-03-07 11:24:14.050829 (Thread-1): Using postgres connection "model.Analytics_dbt.rfps_per_week".
+2022-03-07 11:24:14.050829 (Thread-1): On model.Analytics_dbt.rfps_per_week: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "node_id": "model.Analytics_dbt.rfps_per_week"} */
+alter table "adludio"."public"."rfps_per_week__dbt_tmp" rename to "rfps_per_week"
+2022-03-07 11:24:14.051820 (Thread-1): SQL status: ALTER TABLE in 0.00 seconds
+2022-03-07 11:24:14.056821 (Thread-1): On model.Analytics_dbt.rfps_per_week: COMMIT
+2022-03-07 11:24:14.057818 (Thread-1): Using postgres connection "model.Analytics_dbt.rfps_per_week".
+2022-03-07 11:24:14.057818 (Thread-1): On model.Analytics_dbt.rfps_per_week: COMMIT
+2022-03-07 11:24:14.059816 (Thread-1): SQL status: COMMIT in 0.00 seconds
+2022-03-07 11:24:14.064822 (Thread-1): Using postgres connection "model.Analytics_dbt.rfps_per_week".
+2022-03-07 11:24:14.064822 (Thread-1): On model.Analytics_dbt.rfps_per_week: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "Analytics_dbt", "target_name": "dev", "node_id": "model.Analytics_dbt.rfps_per_week"} */
+drop table if exists "adludio"."public"."rfps_per_week__dbt_backup" cascade
+2022-03-07 11:24:14.065819 (Thread-1): SQL status: DROP TABLE in 0.00 seconds
+2022-03-07 11:24:14.070820 (Thread-1): finished collecting timing info
+2022-03-07 11:24:14.071819 (Thread-1): On model.Analytics_dbt.rfps_per_week: Close
+2022-03-07 11:24:14.072820 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '530c8bb1-3087-4481-baf4-b447a0d53c0b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C627A794F0>]}
+2022-03-07 11:24:14.073823 (Thread-1): 08:24:14 | 6 of 6 OK created table model public.rfps_per_week................... [SELECT 8 in 0.29s]
+2022-03-07 11:24:14.076819 (Thread-1): Finished running node model.Analytics_dbt.rfps_per_week
+2022-03-07 11:24:14.081825 (MainThread): Acquiring new postgres connection "master".
+2022-03-07 11:24:14.082822 (MainThread): Using postgres connection "master".
+2022-03-07 11:24:14.082822 (MainThread): On master: BEGIN
+2022-03-07 11:24:14.082822 (MainThread): Opening a new connection, currently in state closed
+2022-03-07 11:24:14.324819 (MainThread): SQL status: BEGIN in 0.24 seconds
+2022-03-07 11:24:14.325818 (MainThread): On master: COMMIT
+2022-03-07 11:24:14.325818 (MainThread): Using postgres connection "master".
+2022-03-07 11:24:14.325818 (MainThread): On master: COMMIT
+2022-03-07 11:24:14.326814 (MainThread): SQL status: COMMIT in 0.00 seconds
+2022-03-07 11:24:14.327816 (MainThread): On master: Close
+2022-03-07 11:24:14.328819 (MainThread): 08:24:14 | 
+2022-03-07 11:24:14.330821 (MainThread): 08:24:14 | Finished running 6 table models in 3.27s.
+2022-03-07 11:24:14.332815 (MainThread): Connection 'master' was properly closed.
+2022-03-07 11:24:14.332815 (MainThread): Connection 'list_adludio' was properly closed.
+2022-03-07 11:24:14.333824 (MainThread): Connection 'list_adludio_public' was properly closed.
+2022-03-07 11:24:14.333824 (MainThread): Connection 'model.Analytics_dbt.rfps_per_week' was properly closed.
+2022-03-07 11:24:14.352820 (MainThread): 
+2022-03-07 11:24:14.355826 (MainThread): Completed successfully
+2022-03-07 11:24:14.363860 (MainThread): 
+Done. PASS=6 WARN=0 ERROR=0 SKIP=0 TOTAL=6
+2022-03-07 11:24:14.367838 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C6278FF670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C6278FF2E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C62776DE80>]}
+2022-03-07 11:24:14.369822 (MainThread): Flushing usage events
