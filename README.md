@@ -15,6 +15,7 @@
         <li><a href="#built-with">Built With</a></li>
         <li><a href="#dbt"> dbt</a></li>
         <li><a href="#Tableau"> Tableau</a></li>
+        <li><a href="#postgres"> postgres</a></li>
       </ul>
     </li>
     <li>
@@ -91,7 +92,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 - https://analysis-summary.netlify.app/#!/overview
 ## Tableau
 
-Project Link: [https://github.com/Abreham-13/Social_Net)
+Project Link: [https://github.com/Abreham-g/adludio-challenge)
   - Link for Quarterly Average Deal Value per week
     - https://public.tableau.com/app/profile/abreham.gessesse2511/viz/QuarterlyAvgDealValueperweek/Sheet4
  - Tableau link for Quarterly Average Emails per week
@@ -102,6 +103,8 @@ Project Link: [https://github.com/Abreham-13/Social_Net)
    - https://public.tableau.com/app/profile/abreham.gessesse2511/viz/RFPsperweek/Sheet8
 - Tableau link for Quarterly Average IOs per week
   - https://public.tableau.com/app/profile/abreham.gessesse2511/viz/IOsperweek/Sheet6?publish=yes
+  
+ ## postgres
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
