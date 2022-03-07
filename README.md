@@ -62,7 +62,7 @@ You can get a local copy up and running follow these simple example steps.
    ```sh
    git clone https://github.com/Abreham-g/adludio-challenge
    ```
-2. open the project VS code.
+2. open the project in VS code.
 3. Connect dbt with postgres by using the connection string in profiles.yml.
 4. then run dbt.if it's ok.
 5. connct tableau with postgres.
