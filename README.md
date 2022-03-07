@@ -102,8 +102,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
    - https://public.tableau.com/app/profile/abreham.gessesse2511/viz/RFPsperweek/Sheet8
 - Tableau link for Quarterly Average IOs per week
   - https://public.tableau.com/app/profile/abreham.gessesse2511/viz/IOsperweek/Sheet6?publish=yes
-  
- ## postgres
+
 
 
 <!-- CONTACT -->
