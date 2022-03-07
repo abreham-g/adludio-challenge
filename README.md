@@ -46,6 +46,7 @@ A list of commonly used resources that we find helpful are listed in the acknowl
 Some of the Resoures that we are using in this project are :
  - [dbt](https://discourse.getdbt.com/)
  - [tableau](https://www.tableau.com/learn/get-started)
+ - [Postgres](https://www.postgresql.org/docs/8.3/app-postgres.html)
 
 <!-- GETTING STARTED -->
 ## Getting Started
