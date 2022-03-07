@@ -46,6 +46,7 @@ A list of commonly used resources that we find helpful are listed in the acknowl
 Some of the Resoures that we are using in this project are :
  - [dbt](https://discourse.getdbt.com/)
  - [tableau](https://www.tableau.com/learn/get-started)
+      -
  - [Postgres](https://www.postgresql.org/docs/8.3/app-postgres.html)
 
 <!-- GETTING STARTED -->
@@ -85,6 +86,24 @@ Contributions are what make the open source community such an amazing place to b
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
+### Tableau Dashboard
+
+Project Link: [https://github.com/Abreham-13/Social_Net)
+  - Link for Quarterly Average Deal Value per week
+    - https://public.tableau.com/app/profile/abreham.gessesse2511/viz/QuarterlyAvgDealValueperweek/Sheet4
+ - Tableau link for Quarterly Average Emails per week
+    - https://public.tableau.com/app/profile/abreham.gessesse2511/viz/Emailsperweek/Sheet5?publish=yes
+ - Tableau link for Quarterly Avg Meeting per week
+    -https://public.tableau.com/app/profile/abreham.gessesse2511/viz/QuarterlyAverageMeetingperweek/Sheet9?publish=yes
+- Tableau link for Quarterly Average RFPs per week
+   - https://public.tableau.com/app/profile/abreham.gessesse2511/viz/RFPsperweek/Sheet8
+- Tableau link for Quarterly Average IOs per week
+  - https://public.tableau.com/app/profile/abreham.gessesse2511/viz/IOsperweek/Sheet6?publish=yes
+
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
+
+
 
 
 
