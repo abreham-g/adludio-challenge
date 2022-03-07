@@ -31,10 +31,6 @@
   </ol>
 </details>
 
-Here's What this module can do:
-* List goes here
-* and here
-* ...
 ### About The Project
 One of the key things we take pride in as a team is the provision of data-driven business
 insights to both external stakeholders and internal teams for better decision-making. Therefore,
