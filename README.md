@@ -13,7 +13,7 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
-        <li><a href="# Tableau Dashboard"> Tableau Dashboard</a></li>
+        <li><a href="# Tableau"> Tableau</a></li>
       </ul>
     </li>
     <li>
@@ -86,7 +86,7 @@ Contributions are what make the open source community such an amazing place to b
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
-### Tableau Dashboard
+### Tableau
 
 Project Link: [https://github.com/Abreham-13/Social_Net)
   - Link for Quarterly Average Deal Value per week
