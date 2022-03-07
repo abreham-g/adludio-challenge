@@ -35,6 +35,13 @@ Here's What this module can do:
 * List goes here
 * and here
 * ...
+### About The Project
+One of the key things we take pride in as a team is the provision of data-driven business
+insights to both external stakeholders and internal teams for better decision-making. Therefore,
+by assuming the role of an analytic engineer at adludio, by useing the Sales [data](https://drive.google.com/file/d/1Nz1ywJZvm0vtq_uwDUQkeBZH32NE3wWk/view)
+provided to do transformations that will be used to communicate the relevant metrics(as guided below) and any
+other relevant insights from the data.
+
 
 A list of commonly used resources that we find helpful are listed in the acknowledgements.
 
